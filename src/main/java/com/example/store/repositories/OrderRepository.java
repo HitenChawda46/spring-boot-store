@@ -2,6 +2,7 @@ package com.example.store.repositories;
 
 import com.example.store.entities.Order;
 import com.example.store.entities.User;
+import jakarta.validation.constraints.NotNull;
 import org.springframework.data.jpa.repository.EntityGraph;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
