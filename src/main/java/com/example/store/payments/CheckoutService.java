@@ -1,19 +1,13 @@
-package com.example.store.services;
+package com.example.store.payments;
 
-import com.example.store.dtos.CheckoutRequest;
-import com.example.store.dtos.CheckoutResponse;
 import com.example.store.entities.Order;
-import com.example.store.entities.PaymentStatus;
 import com.example.store.exceptions.CartEmptyException;
 import com.example.store.exceptions.CartNotFoundException;
-import com.example.store.exceptions.PaymentException;
 import com.example.store.repositories.CartRepository;
 import com.example.store.repositories.OrderRepository;
-import com.stripe.exception.SignatureVerificationException;
-import com.stripe.model.PaymentIntent;
-import com.stripe.net.Webhook;
+import com.example.store.services.AuthService;
+import com.example.store.services.CartService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

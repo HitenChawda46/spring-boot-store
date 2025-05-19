@@ -1,4 +1,4 @@
-package com.example.store.exceptions;
+package com.example.store.payments;
 
 import lombok.NoArgsConstructor;
 
